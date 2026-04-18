@@ -15,7 +15,7 @@
   const scrollProgress = document.querySelector("[data-scroll-progress]");
   const scrollTopButton = document.querySelector("[data-scroll-top]");
   const kickstarterUrl = "https://www.kickstarter.com/projects/crytivogames/synchro";
-  const signupRedirectDelayMs = 4500;
+  const signupRedirectDelayMs = 2500;
   const screenshots = [
     {
       title: "Propaganda On The Wall",
