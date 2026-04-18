@@ -1,0 +1,542 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta
+      name="description"
+      content="Synchro is a cyberpunk turn-based RPG where you lead an underground resistance, read minds with telepathy, scan hidden truths, recruit heroes, build a secret base, and fight in synchronous tactical combat."
+    />
+    <meta
+      name="keywords"
+      content="Synchro, cyberpunk RPG, turn-based RPG, tactical RPG, synchronous combat, roguelite team, telepathy game, Solar-30, Crytivo"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#080503" />
+    <meta property="og:site_name" content="Synchro" />
+    <meta property="og:title" content="Synchro - Cyberpunk Turn-Based RPG" />
+    <meta
+      property="og:description"
+      content="Uncover corporate lies, assemble an underground roguelite team, use telepathy and scanning devices, and outsmart enemies in synchronous turn-based combat."
+    />
+    <meta property="og:image" content="./assets/synchro-hero.png" />
+    <meta property="og:image:alt" content="Synchro cyberpunk resistance key art" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Synchro - Cyberpunk Turn-Based RPG" />
+    <meta
+      name="twitter:description"
+      content="Lead the resistance in Solar-30, read minds, reveal hidden threats, and fight synchronous tactical battles."
+    />
+    <meta name="twitter:image" content="./assets/synchro-hero.png" />
+    <link rel="icon" type="image/png" href="./assets/icon%20comm.png" />
+    <link rel="apple-touch-icon" href="./assets/icon%20comm.png" />
+    <title>Synchro - Cyberpunk Turn-Based RPG with Synchronous Combat</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoGame",
+        "name": "Synchro",
+        "description": "Synchro is a cyberpunk turn-based RPG about leading an underground resistance against a sinister corporation. Recruit heroes, use telepathy, scan hidden truths, build a secret headquarters, and fight in synchronous tactical battles.",
+        "genre": ["Turn-based RPG", "Tactical RPG", "Cyberpunk", "Roguelite"],
+        "gamePlatform": ["PC"],
+        "applicationCategory": "Game",
+        "operatingSystem": "Windows",
+        "image": "./assets/synchro-hero.png",
+        "logo": "./assets/Logo%20synchro.png",
+        "sameAs": [
+          "https://store.steampowered.com/app/2814880/Synchro/",
+          "https://www.kickstarter.com/projects/crytivogames/synchro",
+          "https://discord.gg/NkrXNSKanR"
+        ],
+        "trailer": {
+          "@type": "VideoObject",
+          "name": "Synchro Reveal Trailer",
+          "description": "Reveal trailer for Synchro, a cyberpunk turn-based RPG with synchronous tactical combat.",
+          "thumbnailUrl": "./assets/synchro-hero.png",
+          "embedUrl": "https://www.youtube.com/embed/I3Ri82yzNIQ"
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="root">
+      <main class="site-shell">
+        <div class="scroll-progress" aria-hidden="true">
+          <span data-scroll-progress></span>
+        </div>
+        <section
+          class="hero"
+          style="--hero-image: url('./assets/synchro-hero.png')"
+        >
+          <div class="noise-layer" aria-hidden="true"></div>
+          <header class="top-nav" aria-label="Primary navigation">
+            <a class="brand-mark" href="#top" aria-label="Synchro home">
+              <img src="./assets/Logo%20synchro.png" alt="Synchro" />
+            </a>
+            <nav>
+              <a href="#story">Story</a>
+              <a href="#intel">Intel</a>
+              <a href="#media">Media</a>
+              <a href="#signup">Signal</a>
+            </nav>
+            <div class="campaign-links" aria-label="Campaign links">
+              <a class="campaign-button" href="https://discord.gg/NkrXNSKanR">Discord</a>
+              <a class="campaign-button" href="https://store.steampowered.com/app/2814880/Synchro/">Steam</a>
+              <a class="campaign-button campaign-button-featured" href="https://www.kickstarter.com/projects/crytivogames/synchro" target="_blank" rel="noopener">Follow on Kickstarter</a>
+            </div>
+          </header>
+
+          <div class="hero-grid" id="top">
+            <div class="hero-copy">
+              <p class="overline">Resistance protocol active</p>
+              <h1>Synchro</h1>
+              <p class="kicker">Synchronous turn-based RPG</p>
+              <p class="hero-subtitle">
+                Uncover corporate lies, assemble an underground roguelite team,
+                and rise through Solar-30 with telepathy, tactics, and
+                synchronized combat.
+              </p>
+              <div class="hero-actions">
+                <a class="button button-primary" href="https://www.kickstarter.com/projects/crytivogames/synchro" target="_blank" rel="noopener">Follow on Kickstarter</a>
+                <button class="button button-ghost" type="button" data-open-modal="trailer">Watch the Feed</button>
+              </div>
+            </div>
+
+            <aside class="signup-panel" id="signup" aria-labelledby="signup-title">
+              <div class="panel-chrome"><span></span><span></span><span></span></div>
+              <p class="panel-label">Private signal</p>
+              <h2 id="signup-title">Receive resistance transmissions</h2>
+              <p>
+                Join the mailing list for trailer drops, demo news, Kickstarter
+                updates, Steam announcements, and playtest windows.
+              </p>
+              <form class="signup-form" action="https://crytivo.us12.list-manage.com/subscribe/post?u=9a67a376226e7f3db13056c73&amp;id=437627bdee&amp;f_id=008c47e0f0" method="post" target="_blank">
+                <label>
+                  <span>Email address</span>
+                  <input
+                    type="email"
+                    name="EMAIL"
+                    placeholder="operative@email.com"
+                    autocomplete="email"
+                    required
+                  />
+                </label>
+                <input type="hidden" name="tags" value="12061358" />
+                <input class="signup-honeypot" type="text" name="b_9a67a376226e7f3db13056c73_437627bdee" tabindex="-1" autocomplete="off" aria-hidden="true" />
+                <button type="submit">Join the Resistance</button>
+              </form>
+              <small>No spam. Only major Synchro updates from the underground signal.</small>
+            </aside>
+
+            <div class="stat-strip" aria-label="Game highlights">
+              <div class="stat"><strong>10</strong><span>Hero Classes</span></div>
+              <div class="stat"><strong>SYNC</strong><span>Simultaneous Turns</span></div>
+              <div class="stat"><strong>Solar-30</strong><span>City Under Siege</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="story-section" id="story" aria-labelledby="story-title">
+          <div class="story-card">
+            <p class="section-kicker">Corporate lies end here</p>
+            <h2 id="story-title">Lead ordinary people into impossible resistance.</h2>
+            <div>
+              <p>
+                Synchro is a turn-based RPG about confronting a sinister
+                corporation conducting monstrous experiments on people.
+              </p>
+              <p>
+                You are a young resistance leader whose parents were killed by
+                covetous technocrats. Recruit citizens with dormant heroic
+                potential, read minds with telepathy, and outsmart androids,
+                mafia enforcers, and creepy mutants.
+              </p>
+              <p>
+                Explore the shady corners of Solar-30, build a secret
+                headquarters, and turn scattered survivors into a team capable of
+                breaking the machine.
+              </p>
+            </div>
+          </div>
+          <aside class="choice-card" aria-label="Resistance callout">
+            <span>The time for making choices has passed.</span>
+            <strong>It is time to act.</strong>
+          </aside>
+        </section>
+
+        <section class="intel-band" id="intel" aria-label="Game pillars">
+          <div class="section-heading">
+            <p class="section-kicker">Game features</p>
+            <h2>Plan the turn, predict the enemy, then act before the city adapts.</h2>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <p>Synchronous battles</p>
+              <h3>Everyone moves at once</h3>
+              <span>Fight battles where your team and the enemy execute actions simultaneously.</span>
+            </article>
+            <article class="feature-card">
+              <p>Telepathy tactics</p>
+              <h3>Read thoughts, break plans</h3>
+              <span>Read citizens, expose secrets, and anticipate enemy plans before combat resolves.</span>
+            </article>
+            <article class="feature-card">
+              <p>Scanner device</p>
+              <h3>Reveal what hides underneath</h3>
+              <span>Uncover false banners, hidden signals, and monsters disguised as ordinary people.</span>
+            </article>
+            <article class="feature-card">
+              <p>Resistance roster</p>
+              <h3>Recruit 10 hero classes</h3>
+              <span>Build any type of team from ordinary people hiding dormant heroic potential.</span>
+            </article>
+            <article class="feature-card">
+              <p>Secret headquarters</p>
+              <h3>Build the underground base</h3>
+              <span>Construct the training ground, hi-tech workshop, library, and more.</span>
+            </article>
+            <article class="feature-card">
+              <p>Gear and psychology</p>
+              <h3>Upgrade more than stats</h3>
+              <span>Modify equipment while helping heroes overcome gameplay-affecting problems.</span>
+            </article>
+            <article class="feature-card">
+              <p>Solar-30</p>
+              <h3>Cyberpunk meets ruin</h3>
+              <span>Explore a dark future city with stashes, androids, mafia crews, and mutants.</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="media-section" id="media" aria-labelledby="media-title">
+          <div class="section-heading media-heading">
+            <p class="section-kicker">Media bay</p>
+            <h2 id="media-title">Screenshots and press drops from Solar-30.</h2>
+            <a class="button button-download" href="./assets/synchro-media-kit.zip" download>Download Media Pack</a>
+          </div>
+          <div class="media-layout">
+            <div class="screenshot-carousel" aria-label="Screenshot carousel" data-carousel>
+              <div class="carousel-frame">
+                <img
+                  data-carousel-image
+                  src="./assets/1.jpg"
+                  alt="Synchro screenshot showing a green corporate billboard that says Get Fat You Are What You Eat above a city walkway"
+                />
+                <div class="carousel-caption">
+                  <p data-carousel-eyebrow>Screenshot 01</p>
+                  <h3 data-carousel-title>Propaganda On The Wall</h3>
+                </div>
+                <button class="carousel-control carousel-control-prev" type="button" data-carousel-prev>Prev</button>
+                <button class="carousel-control carousel-control-next" type="button" data-carousel-next>Next</button>
+              </div>
+              <div class="carousel-thumbs" aria-label="Select screenshot">
+                <button class="is-active" type="button" data-carousel-thumb="0" aria-label="Show Propaganda On The Wall">
+                  <img src="./assets/1.jpg" alt="" />
+                </button>
+                <button type="button" data-carousel-thumb="1" aria-label="Show Mutant At The Edge">
+                  <img src="./assets/2.jpg" alt="" />
+                </button>
+                <button type="button" data-carousel-thumb="2" aria-label="Show The Monster Underneath">
+                  <img src="./assets/3.jpg" alt="" />
+                </button>
+                <button type="button" data-carousel-thumb="3" aria-label="Show Synchronized Fire">
+                  <img src="./assets/4.jpg" alt="" />
+                </button>
+                <button type="button" data-carousel-thumb="4" aria-label="Show Snowbound Outskirts">
+                  <img src="./assets/6.jpg" alt="" />
+                </button>
+                <button type="button" data-carousel-thumb="5" aria-label="Show Plan Before They Move">
+                  <img src="./assets/7.jpg" alt="" />
+                </button>
+              </div>
+            </div>
+            <article
+              class="trailer-card"
+              style="--trailer-image: url('./assets/1.jpg')"
+            >
+              <button class="trailer-trigger" type="button" data-open-modal="trailer">
+                <span>Play trailer</span>
+              </button>
+              <div>
+                <p class="section-kicker">YouTube feed</p>
+                <h3>Synchro reveal trailer</h3>
+                <p>Watch the latest Synchro trailer from the underground feed.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <footer class="signal-footer" id="privacy">
+          <div class="footer-main">
+            <div>
+              <p class="section-kicker">Synchro transmission</p>
+              <h2>Stay ready. The city only opens once.</h2>
+            </div>
+            <nav aria-label="Footer navigation">
+              <a href="https://discord.gg/NkrXNSKanR">Discord</a>
+              <a href="https://store.steampowered.com/app/2814880/Synchro/">Steam</a>
+              <a href="https://www.kickstarter.com/projects/crytivogames/synchro">Follow on Kickstarter</a>
+              <a href="https://crytivo.com/privacy-policy">Privacy Policy</a>
+              <a href="mailto:pr@crytivo.com">Contact</a>
+            </nav>
+          </div>
+          <div class="footer-legal">
+            <p>For press and business inquiries contact pr@cryivo.com</p>
+            <p>(c) 2026 Synchro & © 2026 Crytivo, Inc. All rights reserved. All trademarks are property of their respective owners.</p>
+          </div>
+        </footer>
+
+        <div class="floating-actions" aria-label="Persistent page actions">
+          <a class="floating-kickstarter" href="https://www.kickstarter.com/projects/crytivogames/synchro" target="_blank" rel="noopener">
+            <span>Follow</span>
+            <strong>Kickstarter</strong>
+          </a>
+          <button class="scroll-top-button" type="button" data-scroll-top aria-label="Scroll to top" tabindex="-1">
+            Top
+          </button>
+        </div>
+      </main>
+    </div>
+
+    <div class="modal-backdrop" data-modal="signup" hidden>
+      <section class="modal-panel" role="dialog" aria-modal="true" aria-label="Receive resistance transmissions">
+        <button class="modal-close" type="button" data-close-modal>Close</button>
+        <p class="panel-label">Underground channel</p>
+        <h2>Receive resistance transmissions</h2>
+        <form class="signup-form" action="https://crytivo.us12.list-manage.com/subscribe/post?u=9a67a376226e7f3db13056c73&amp;id=437627bdee&amp;f_id=008c47e0f0" method="post" target="_blank">
+          <label>
+            <span>Email address</span>
+            <input
+              type="email"
+              name="EMAIL"
+              placeholder="operative@email.com"
+              autocomplete="email"
+              required
+            />
+          </label>
+          <input type="hidden" name="tags" value="12061358" />
+          <input class="signup-honeypot" type="text" name="b_9a67a376226e7f3db13056c73_437627bdee" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <button type="submit">Join the Resistance</button>
+        </form>
+      </section>
+    </div>
+
+    <div class="modal-backdrop" data-modal="trailer" hidden>
+      <section class="modal-panel modal-panel-wide" role="dialog" aria-modal="true" aria-label="Synchro reveal trailer">
+        <button class="modal-close" type="button" data-close-modal>Close</button>
+        <p class="panel-label">Underground channel</p>
+        <h2>Synchro reveal trailer</h2>
+        <div class="video-embed">
+          <iframe
+            data-trailer-iframe
+            data-youtube-id="I3Ri82yzNIQ"
+            title="Synchro reveal trailer"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="modal-fallback" data-trailer-fallback hidden>
+          <p>YouTube embeds need a web server so the player can verify this page. Run the site with corepack pnpm dev, or open the trailer on YouTube.</p>
+          <a class="button button-primary" href="https://www.youtube.com/watch?v=I3Ri82yzNIQ" target="_blank" rel="noopener">Open YouTube</a>
+        </div>
+        <p class="modal-help">If the embedded player is blocked in a local file preview, run the page from a local web server.</p>
+      </section>
+    </div>
+
+    <script>
+      (() => {
+        let activeScreenshot = 0;
+
+        const modalTriggers = document.querySelectorAll("[data-open-modal]");
+        const closeButtons = document.querySelectorAll("[data-close-modal]");
+        const modals = document.querySelectorAll("[data-modal]");
+        const trailerIframe = document.querySelector("[data-trailer-iframe]");
+        const trailerEmbed = trailerIframe?.closest(".video-embed");
+        const trailerFallback = document.querySelector("[data-trailer-fallback]");
+        const carouselImage = document.querySelector("[data-carousel-image]");
+        const carouselEyebrow = document.querySelector("[data-carousel-eyebrow]");
+        const carouselTitle = document.querySelector("[data-carousel-title]");
+        const carouselThumbs = document.querySelectorAll("[data-carousel-thumb]");
+        const scrollProgress = document.querySelector("[data-scroll-progress]");
+        const scrollTopButton = document.querySelector("[data-scroll-top]");
+        const screenshots = [
+          {
+            title: "Propaganda On The Wall",
+            eyebrow: "Screenshot 01",
+            src: carouselThumbs[0]?.querySelector("img")?.src || carouselImage?.src,
+            alt: "Synchro screenshot showing a green corporate billboard that says Get Fat You Are What You Eat above a city walkway",
+          },
+          {
+            title: "Mutant At The Edge",
+            eyebrow: "Screenshot 02",
+            src: carouselThumbs[1]?.querySelector("img")?.src || carouselImage?.src,
+            alt: "Synchro exploration screenshot showing an armed mutant on a ruined platform with a massive machine in the red Solar-30 skyline",
+          },
+          {
+            title: "The Monster Underneath",
+            eyebrow: "Screenshot 03",
+            src: carouselThumbs[2]?.querySelector("img")?.src || carouselImage?.src,
+            alt: "Synchro scanner screenshot revealing a shadowy monster beside a human character during a dialogue choice",
+          },
+          {
+            title: "Synchronized Fire",
+            eyebrow: "Screenshot 04",
+            src: carouselThumbs[3]?.querySelector("img")?.src || carouselImage?.src,
+            alt: "Synchro combat screenshot showing a sniper attack hitting multiple mutants during a synchronous battle",
+          },
+          {
+            title: "Snowbound Outskirts",
+            eyebrow: "Screenshot 05",
+            src: carouselThumbs[4]?.querySelector("img")?.src || carouselImage?.src,
+            alt: "Synchro exploration screenshot showing a resistance fighter crossing snowy post-apocalyptic ruins outside Solar-30",
+          },
+          {
+            title: "Plan Before They Move",
+            eyebrow: "Screenshot 06",
+            src: carouselThumbs[5]?.querySelector("img")?.src || carouselImage?.src,
+            alt: "Synchro tactical combat screenshot showing attack paths, hit chance, enemy range, and turn planning",
+          },
+        ];
+
+        function canUseYouTubeEmbed() {
+          return window.location.protocol === "http:" || window.location.protocol === "https:";
+        }
+
+        function getYouTubeEmbedUrl(videoId) {
+          if (!videoId || !canUseYouTubeEmbed()) {
+            return "";
+          }
+
+          const params = new URLSearchParams({
+            playsinline: "1",
+            rel: "0",
+          });
+
+          if (window.location.origin && window.location.origin !== "null") {
+            params.set("origin", window.location.origin);
+          }
+
+          return `https://www.youtube.com/embed/${videoId}?${params}`;
+        }
+
+        function loadTrailer() {
+          const trailerUrl = getYouTubeEmbedUrl(trailerIframe?.dataset.youtubeId);
+          const canLoadTrailer = Boolean(trailerUrl);
+
+          if (trailerEmbed) {
+            trailerEmbed.hidden = !canLoadTrailer;
+          }
+
+          if (trailerFallback) {
+            trailerFallback.hidden = canLoadTrailer;
+          }
+
+          if (canLoadTrailer && trailerIframe) {
+            trailerIframe.src = trailerUrl;
+          }
+        }
+
+        function openModal(name) {
+          const modal = document.querySelector(`[data-modal="${name}"]`);
+          if (modal) {
+            if (name === "trailer") {
+              loadTrailer();
+            }
+            modal.hidden = false;
+          }
+        }
+
+        function closeModals() {
+          modals.forEach((modal) => {
+            modal.hidden = true;
+          });
+          if (trailerIframe) {
+            trailerIframe.src = "";
+          }
+        }
+
+        function renderCarousel(index) {
+          activeScreenshot = (index + screenshots.length) % screenshots.length;
+          const screenshot = screenshots[activeScreenshot];
+          carouselImage.src = screenshot.src;
+          carouselImage.alt = screenshot.alt;
+          carouselEyebrow.textContent = screenshot.eyebrow;
+          carouselTitle.textContent = screenshot.title;
+          carouselThumbs.forEach((thumb, thumbIndex) => {
+            thumb.classList.toggle("is-active", thumbIndex === activeScreenshot);
+          });
+        }
+
+        function renderScrollUi() {
+          const scrollTop = window.scrollY;
+          const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+          const progress = maxScroll > 0 ? (scrollTop / maxScroll) * 100 : 0;
+
+          if (scrollProgress) {
+            scrollProgress.style.width = `${progress}%`;
+          }
+
+          if (scrollTopButton) {
+            const isVisible = scrollTop > 560;
+            scrollTopButton.classList.toggle("is-visible", isVisible);
+            scrollTopButton.tabIndex = isVisible ? 0 : -1;
+          }
+        }
+
+        modalTriggers.forEach((trigger) => {
+          trigger.addEventListener("click", (event) => {
+            event.preventDefault();
+            openModal(trigger.dataset.openModal);
+          });
+        });
+
+        closeButtons.forEach((button) => {
+          button.addEventListener("click", closeModals);
+        });
+
+        modals.forEach((modal) => {
+          modal.addEventListener("click", (event) => {
+            if (event.target === modal) {
+              closeModals();
+            }
+          });
+        });
+
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "Escape") {
+            closeModals();
+          }
+        });
+
+        document.querySelector("[data-carousel-prev]")?.addEventListener("click", () => {
+          renderCarousel(activeScreenshot - 1);
+        });
+
+        document.querySelector("[data-carousel-next]")?.addEventListener("click", () => {
+          renderCarousel(activeScreenshot + 1);
+        });
+
+        carouselThumbs.forEach((thumb) => {
+          thumb.addEventListener("click", () => {
+            renderCarousel(Number(thumb.dataset.carouselThumb));
+          });
+        });
+
+        scrollTopButton?.addEventListener("click", () => {
+          scrollTopButton.blur();
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
+        window.addEventListener("scroll", renderScrollUi, { passive: true });
+        window.addEventListener("resize", renderScrollUi);
+        renderScrollUi();
+      })();
+    </script>
+  </body>
+</html>
+
