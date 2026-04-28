@@ -81,9 +81,8 @@
             </a>
             <nav>
               <a href="#story">Story</a>
-              <a href="#intel">Intel</a>
+              <a href="#features">Features</a>
               <a href="#media">Media</a>
-              <a href="#signup">Signal</a>
             </nav>
             <div class="campaign-links" aria-label="Campaign links">
               <a class="campaign-button" href="https://discord.gg/NkrXNSKanR">Discord</a>
@@ -103,8 +102,7 @@
                 synchronized combat.
               </p>
               <div class="hero-actions">
-                <a class="button button-primary" href="https://www.kickstarter.com/projects/crytivogames/synchro" target="_blank" rel="noopener">Follow on Kickstarter</a>
-                <button class="button button-ghost" type="button" data-open-modal="trailer">Watch the Feed</button>
+                <a class="button button-primary kickstarter-button" href="https://www.kickstarter.com/projects/crytivogames/synchro" target="_blank" rel="noopener">Follow on Kickstarter</a>
               </div>
             </div>
 
@@ -134,19 +132,20 @@
               <small>No spam. Only major Synchro updates from the underground signal.</small>
             </aside>
 
-            <div class="stat-strip" aria-label="Game highlights">
-              <div class="stat"><strong>10</strong><span>Hero Classes</span></div>
-              <div class="stat"><strong>SYNC</strong><span>Simultaneous Turns</span></div>
-              <div class="stat"><strong>Solar-30</strong><span>City Under Siege</span></div>
-            </div>
+            <section class="hero-trailer-panel" aria-label="Synchro reveal trailer" style="--trailer-image: url('./assets/1.jpg')">
+              <p class="panel-label">Reveal trailer</p>
+              <button class="trailer-panel-button" type="button" data-open-modal="trailer" aria-label="Watch Synchro reveal trailer">
+                <span class="trailer-play-icon" aria-hidden="true"></span>
+                <span class="trailer-panel-title">Watch the Trailer</span>
+              </button>
+            </section>
           </div>
         </section>
 
         <section class="story-section" id="story" aria-labelledby="story-title">
           <div class="story-card">
             <p class="section-kicker">Corporate lies end here</p>
-            <h2 id="story-title">Lead ordinary people into impossible resistance.</h2>
-            <div>
+            <div id="story-title">
               <p>
                 Synchro is a turn-based RPG about confronting a sinister
                 corporation conducting monstrous experiments on people.
@@ -164,13 +163,13 @@
               </p>
             </div>
           </div>
-          <aside class="choice-card" aria-label="Resistance callout">
+          <aside class="choice-card" aria-label="Resistance callout" style="--choice-image: url('./assets/3.jpg')">
             <span>The time for making choices has passed.</span>
             <strong>It is time to act.</strong>
           </aside>
         </section>
 
-        <section class="intel-band" id="intel" aria-label="Game pillars">
+        <section class="intel-band" id="features" aria-label="Game features">
           <div class="section-heading">
             <p class="section-kicker">Game features</p>
             <h2>Plan the turn, predict the enemy, then act before the city adapts.</h2>
@@ -182,34 +181,14 @@
               <span>Fight battles where your team and the enemy execute actions simultaneously.</span>
             </article>
             <article class="feature-card">
-              <p>Telepathy tactics</p>
-              <h3>Read thoughts, break plans</h3>
-              <span>Read citizens, expose secrets, and anticipate enemy plans before combat resolves.</span>
-            </article>
-            <article class="feature-card">
               <p>Scanner device</p>
               <h3>Reveal what hides underneath</h3>
               <span>Uncover false banners, hidden signals, and monsters disguised as ordinary people.</span>
             </article>
             <article class="feature-card">
-              <p>Resistance roster</p>
-              <h3>Recruit 10 hero classes</h3>
-              <span>Build any type of team from ordinary people hiding dormant heroic potential.</span>
-            </article>
-            <article class="feature-card">
               <p>Secret headquarters</p>
-              <h3>Build the underground base</h3>
+              <h3>Build the base</h3>
               <span>Construct the training ground, hi-tech workshop, library, and more.</span>
-            </article>
-            <article class="feature-card">
-              <p>Gear and psychology</p>
-              <h3>Upgrade more than stats</h3>
-              <span>Modify equipment while helping heroes overcome gameplay-affecting problems.</span>
-            </article>
-            <article class="feature-card">
-              <p>Solar-30</p>
-              <h3>Cyberpunk meets ruin</h3>
-              <span>Explore a dark future city with stashes, androids, mafia crews, and mutants.</span>
             </article>
           </div>
         </section>
@@ -287,8 +266,8 @@
             </nav>
           </div>
           <div class="footer-legal">
-            <p>For press and business inquiries contact pr@cryivo.com</p>
-            <p>(c) 2026 Synchro & © 2026 Crytivo, Inc. All rights reserved. All trademarks are property of their respective owners.</p>
+            <p>For press and business inquiries contact pr@crytivo.com.</p>
+            <p>(c) 2026 Synchro and Crytivo, Inc. All rights reserved. All trademarks are property of their respective owners.</p>
           </div>
         </footer>
 
