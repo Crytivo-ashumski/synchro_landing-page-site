@@ -24,7 +24,7 @@
       alt: "Synchro screenshot showing a green corporate billboard that says Get Fat You Are What You Eat above a city walkway",
     },
     {
-      title: "Mutant At The Edge",
+      title: "Titan At The Edge",
       eyebrow: "Screenshot 02",
       src: carouselThumbs[1]?.querySelector("img")?.src || carouselImage?.src,
       alt: "Synchro exploration screenshot showing an armed mutant on a ruined platform with a massive machine in the red Solar-30 skyline",
